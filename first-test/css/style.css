@@ -10,7 +10,7 @@ body {
   background: linear-gradient(90deg, #FDDB92 0%, #D1FDFE 100%);
 }
 
-.icon {
+.image {
   position: relative;
   top: 100px;
   left: 18px;
@@ -19,7 +19,9 @@ body {
 }
 
 article {
-  margin: 76px 18px 0 18px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 76px 18px 70px 18px;
 }
 
 .top-name {
@@ -40,5 +42,54 @@ article {
 .name-main{
   display: block;
   font-size: 14px;
-  margin: 0 12px;
+  margin: 12px;
+}
+
+.site {
+  font-size: 14px;
+  margin: 12px;
+}
+
+.grid {
+  display: grid;
+  margin: 0 18px 64px 18px;
+  gap: 40px;
+  text-align: center;
+}
+
+.sns p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.sns {
+  margin-bottom: 64px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container img {
+  width: 40px;
+  height: 40px;
+  margin: 0 6px;
+}
+
+footer {
+  background-color: black;
+  height: 51px;
+}
+
+footer p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #D9D9D9;
+  font-size: 12px;
+  text-align: center;
+  padding: 16px 0;
 }
