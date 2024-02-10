@@ -65,6 +65,10 @@ article {
   max-width: 324px;
 }
 
+.item p {
+  font-size: clamp(.9rem,3vw, 1.3rem);
+}
+
 /* sns紹介部分 */
 .sns p {
   font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -105,7 +109,8 @@ footer p {
 }
 
 /* レスポンシブ化 */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 980px) {
+  /* ヘッダー部分 */
   .page-header {
     height: 200px;
     background: linear-gradient(90deg, #FDDB92 0%, #D1FDFE 100%);
@@ -113,14 +118,14 @@ footer p {
   
   .image {
     width: 160px;
-    top: 120px;
-    left: 20%;
+    top: 80px;
+    margin: 0 22% 0;
   }
 
+  /* プロフィール部分 */
   article {
     max-width: 760px;
-    margin-top: 104px;
-    margin-left: 20vw;
+    margin: 104px 22% 0;
   }
   .top-name h6{
     font-size: 20px;
@@ -138,13 +143,14 @@ footer p {
     font-size: 16px;
   }
 
+  /* イメージ部分 */
   .grid {
     max-width: 760px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     text-align: center;
-    margin-left: 20vw;
+    margin-left: 22%;
   }
 
   .item img {
