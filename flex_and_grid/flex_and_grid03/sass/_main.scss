@@ -1,0 +1,56 @@
+@use "mediaQuery" as *;
+
+.main {
+  margin: 0 5%;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    margin: 0 auto;
+
+    & img {
+      border-radius: 5%;
+    }
+    & p {
+      font-weight: bold;
+      padding-top: 10px;
+    }
+  }
+
+  @include min(md) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin: 0 auto;
+
+      & img {
+        border-radius: 5%;
+      }
+      & p {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  @include min(lg) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin: 0 auto;
+
+      & img {
+        border-radius: 5%;
+      }
+      & p {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 10px;
+      }
+    }
+  }
+}
