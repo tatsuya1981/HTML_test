@@ -184,17 +184,19 @@ svg {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 40px;
+  line-height: 1.8;
 }
 @media (width >= 768px) {
   .main .container {
-    grid-template-columns: 100px, 100px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 @media (width >= 768px) {
   .main .container .message:nth-child(1) {
     grid-row: 1/2;
     grid-column: 1/2;
+    line-height: 1.8;
   }
 }
 @media (width >= 768px) {
@@ -213,8 +215,8 @@ svg {
   .main .container .banner {
     grid-row: 1/4;
     grid-column: 2/3;
-    max-width: 250px;
-    max-height: 500px;
+    width: 250px;
+    height: 500px;
   }
 }
 
