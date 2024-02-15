@@ -1,0 +1,23 @@
+.header {
+  height: 60px;
+  background-color: aquamarine;
+
+  .container {
+    display: flex;
+    
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .icon_main svg {
+    height: 17.12px;
+    width: 70px;
+    margin: 21.44px 0 21.44px 19.01px;
+  }
+
+  .icon_cart svg {
+    height: 23.99px;
+    width: 23.36px;
+    margin: 18.32px 19.01px 18.32px 0;
+  }
+}
