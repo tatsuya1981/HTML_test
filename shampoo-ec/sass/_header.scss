@@ -1,23 +1,59 @@
+@use "mediaQuery" as *;
+
 .header {
   height: 60px;
-  background-color: aquamarine;
+  width: 100%;
 
   .container {
     display: flex;
-    
     justify-content: space-between;
     height: 100%;
   }
 
-  .icon_main svg {
-    height: 17.12px;
-    width: 70px;
+  .logo-sp {
     margin: 21.44px 0 21.44px 19.01px;
   }
 
-  .icon_cart svg {
+  .logo-sp svg {
+    height: 17.12px;
+    width: 70px;
+  }
+
+  .icon-cart {
+    margin: 18.32px 19.01px 18.32px 0;
+  }
+
+  .icon-cart svg {
     height: 23.99px;
     width: 23.36px;
-    margin: 18.32px 19.01px 18.32px 0;
+  }
+
+  .icon-cart :hover {
+    opacity: 0.5;
+  }
+}
+
+@include min(md) {
+  .header {
+    height: 80px;
+    width: auto;
+
+    .logo-sp {
+      margin: 29.6px 0 29.6px 32px;
+    }
+
+    .logo-sp svg {
+      height: 20.8px;
+      width: 80px;
+    }
+
+    .icon-cart {
+      margin: 27.35px 32px 27.35px 0;
+    }
+
+    .icon-cart svg {
+      height: 25.99px;
+      width: 25.3px;
+    }
   }
 }

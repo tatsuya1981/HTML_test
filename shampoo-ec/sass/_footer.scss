@@ -1,0 +1,154 @@
+@use "mediaQuery" as *;
+
+.footer {
+  width: 100%;
+  background-color: #baa8a2;
+  padding: 40px 0 20px 0;
+
+  .footer-inner {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  @include min(md) {
+    .footer-inner {
+      max-width: 1080px;
+    }
+  }
+
+  .footer-logo {
+    width: 84px;
+    height: 20.01px;
+    margin: 0 auto 28px;
+  }
+
+  @include min(md) {
+    .footer-logo {
+      display: inline-block;
+      margin-left: auto;
+    }
+  }
+  .footer-logo svg {
+    fill: #ffffff;
+  }
+
+  .footer-nav {
+    list-style: none;
+    width: 263px;
+    height: 36px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+  }
+
+  @include min(md) {
+    .footer-nav {
+      width: auto;
+      height: auto;
+      margin: 0 auto 40px;
+    }
+  }
+
+  .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+  }
+
+  .footer-info1 a {
+    padding-right: 16px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  @include min(md) {
+    .footer-info1 a {
+      padding-right: 24px;
+    }
+  }
+
+  .footer-info1 a:hover {
+    opacity: 0.5;
+  }
+
+  .footer-info2 a {
+    padding-right: 16px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  @include min(md) {
+    .footer-info2 a {
+      padding-right: 24px;
+    }
+  }
+
+  .footer-info2 a:hover {
+    opacity: 0.5;
+  }
+
+  .footer-info3 a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  @include min(md) {
+    .footer-info3 a {
+      padding-right: 24px;
+    }
+  }
+
+  .footer-info3 a:hover {
+    opacity: 0.5;
+  }
+
+  .footer-info4 a {
+    margin: 12px 16px 0px 53px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  @include min(md) {
+    .footer-info4 a {
+      padding-right: 24px;
+      margin: 0;
+    }
+  }
+
+  .footer-info4 a:hover {
+    opacity: 0.5;
+  }
+
+  .footer-info5 a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .footer-info5 a:hover {
+    opacity: 0.5;
+  }
+
+  .footer-border {
+    border-top: 1px solid;
+    border-color: #eeeeee;
+    margin-bottom: 20px;
+  }
+
+  @include min(md) {
+    .footer-border {
+      margin-bottom: 24px;
+    }
+  }
+
+  .footer-small {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Noto Serif JP", serif;
+    color: #eeeeee;
+    margin: 0 auto;
+  }
+}

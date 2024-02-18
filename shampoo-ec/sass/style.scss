@@ -1,4 +1,13 @@
 @use "_reset.scss";
 @use "_header.scss";
-
+@use "_comp.scss";
+@use "_footer.scss";
 @use "_mediaQuery.scss";
+
+/* ------------------------------ */
+/* 全体共通のスタイル */
+/* ------------------------------ */
+
+body {
+  font-family: "Lato", "Noto Serif JP", sans-serif, serif;
+}

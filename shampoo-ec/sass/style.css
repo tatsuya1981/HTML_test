@@ -279,21 +279,248 @@ progress {
 
 .header {
   height: 60px;
-  background-color: aquamarine;
+  width: 100%;
 }
 .header .container {
   display: flex;
   justify-content: space-between;
   height: 100%;
 }
-.header .icon_main svg {
-  height: 17.12px;
-  width: 70px;
+.header .logo-sp {
   margin: 21.44px 0 21.44px 19.01px;
 }
-.header .icon_cart svg {
+.header .logo-sp svg {
+  height: 17.12px;
+  width: 70px;
+}
+.header .icon-cart {
+  margin: 18.32px 19.01px 18.32px 0;
+}
+.header .icon-cart svg {
   height: 23.99px;
   width: 23.36px;
-  margin: 18.32px 19.01px 18.32px 0;
+}
+.header .icon-cart :hover {
+  opacity: 0.5;
+}
+
+@media (width >= 768px) {
+  .header {
+    height: 80px;
+    width: auto;
+  }
+  .header .logo-sp {
+    margin: 29.6px 0 29.6px 32px;
+  }
+  .header .logo-sp svg {
+    height: 20.8px;
+    width: 80px;
+  }
+  .header .icon-cart {
+    margin: 27.35px 32px 27.35px 0;
+  }
+  .header .icon-cart svg {
+    height: 25.99px;
+    width: 25.3px;
+  }
+}
+.c-main {
+  width: 100%;
+  text-align: center;
+}
+.c-main .c-title-level2 {
+  display: inline-block;
+  margin: 47px auto 0;
+}
+.c-main .c-title-level2 a {
+  text-decoration: none;
+}
+.c-main .c-title-level2 a:hover {
+  opacity: 0.5;
+}
+.c-main .c-en {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.4rem;
+  color: #333333;
+}
+@media (width >= 768px) {
+  .c-main .c-en {
+    font-size: 32px;
+  }
+}
+.c-main .c-ja {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.08rem;
+  color: #333333;
+  padding-top: 16px;
+}
+@media (width >= 768px) {
+  .c-main .c-ja {
+    font-size: 18px;
+  }
+}
+.c-main .c-button {
+  background-color: #baa8a2;
+  width: 260px;
+  height: 55px;
+  margin: 47px auto 47px;
+}
+.c-main .c-button a {
+  text-decoration: none;
+}
+.c-main .c-button a:hover {
+  opacity: 0.5;
+}
+.c-main .c-view {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  padding-top: 19.5px;
+  color: #ffffff;
+}
+@media (width >= 768px) {
+  .c-main .c-view {
+    font-size: 18px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #baa8a2;
+  padding: 40px 0 20px 0;
+}
+.footer .footer-inner {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+@media (width >= 768px) {
+  .footer .footer-inner {
+    max-width: 1080px;
+  }
+}
+.footer .footer-logo {
+  width: 84px;
+  height: 20.01px;
+  margin: 0 auto 28px;
+}
+@media (width >= 768px) {
+  .footer .footer-logo {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+.footer .footer-logo svg {
+  fill: #ffffff;
+}
+.footer .footer-nav {
+  list-style: none;
+  width: 263px;
+  height: 36px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+@media (width >= 768px) {
+  .footer .footer-nav {
+    width: auto;
+    height: auto;
+    margin: 0 auto 40px;
+  }
+}
+.footer .footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 12px;
+  letter-spacing: 0.05rem;
+}
+.footer .footer-info1 a {
+  padding-right: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (width >= 768px) {
+  .footer .footer-info1 a {
+    padding-right: 24px;
+  }
+}
+.footer .footer-info1 a:hover {
+  opacity: 0.5;
+}
+.footer .footer-info2 a {
+  padding-right: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (width >= 768px) {
+  .footer .footer-info2 a {
+    padding-right: 24px;
+  }
+}
+.footer .footer-info2 a:hover {
+  opacity: 0.5;
+}
+.footer .footer-info3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (width >= 768px) {
+  .footer .footer-info3 a {
+    padding-right: 24px;
+  }
+}
+.footer .footer-info3 a:hover {
+  opacity: 0.5;
+}
+.footer .footer-info4 a {
+  margin: 12px 16px 0px 53px;
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (width >= 768px) {
+  .footer .footer-info4 a {
+    padding-right: 24px;
+    margin: 0;
+  }
+}
+.footer .footer-info4 a:hover {
+  opacity: 0.5;
+}
+.footer .footer-info5 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer .footer-info5 a:hover {
+  opacity: 0.5;
+}
+.footer .footer-border {
+  border-top: 1px solid;
+  border-color: #eeeeee;
+  margin-bottom: 20px;
+}
+@media (width >= 768px) {
+  .footer .footer-border {
+    margin-bottom: 24px;
+  }
+}
+.footer .footer-small {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  color: #eeeeee;
+  margin: 0 auto;
+}
+
+/* ------------------------------ */
+/* 全体共通のスタイル */
+/* ------------------------------ */
+body {
+  font-family: "Lato", "Noto Serif JP", sans-serif, serif;
 }
 /*# sourceMappingURL=style.css.map */

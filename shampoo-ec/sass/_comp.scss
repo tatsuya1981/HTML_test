@@ -1,0 +1,79 @@
+@use "mediaQuery" as *;
+$back: #baa8a2;
+$wback: #ffffff;
+
+.c-main {
+  width: 100%;
+  text-align: center;
+
+  .c-title-level2 {
+    display: inline-block;
+    margin: 47px auto 0;
+  }
+
+  .c-title-level2 a {
+    text-decoration: none;
+  }
+
+  .c-title-level2 a:hover {
+    opacity: 0.5;
+  }
+
+  .c-en {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.4rem;
+    color: #333333;
+  }
+
+  @include min(md) {
+    .c-en {
+      font-size: 32px;
+    }
+  }
+
+  .c-ja {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.08rem;
+    color: #333333;
+    padding-top: 16px;
+  }
+
+  @include min(md) {
+    .c-ja {
+      font-size: 18px;
+    }
+  }
+
+  .c-button {
+    // display: block;
+    background-color: $back;
+    width: 260px;
+    height: 55px;
+    margin: 47px auto 47px;
+  }
+
+  .c-button a {
+    text-decoration: none;
+  }
+
+  .c-button a:hover{
+    opacity: 0.5;
+  }
+
+  .c-view {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    padding-top: 19.5px;
+    color: $wback;
+  }
+
+  @include min(md) {
+    .c-view {
+      font-size: 18px;
+    }
+  }
+}
