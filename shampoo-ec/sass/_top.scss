@@ -1,0 +1,69 @@
+@use "mediaQuery" as *;
+$back: #baa8a2;
+$wback: #ffffff;
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  border: 0;
+}
+.top-kv {
+  .top-kv-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include min(md) {
+    .top-kv-img {
+  margin-left: 26%;
+    }
+  }
+
+  .top-message {
+    width: 167px;
+    height: 156px;
+    display: inline-block;
+    margin: 16px 0 16px 5%;
+  }
+
+  .top-message p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 2.16;
+    letter-spacing: 0.2rem;
+  }
+
+  .top-button {
+    background-color: $back;
+    width: 260px;
+    height: 55px;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .top-button a {
+    text-decoration: none;
+  }
+
+  .top-button-view {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    padding-top: 19.5px;
+    color: $wback;
+  }
+}
+
+@include min(md) {
+  .top-kv {
+margin-left: 10%;
+  }
+}

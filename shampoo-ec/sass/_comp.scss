@@ -48,7 +48,6 @@ $wback: #ffffff;
   }
 
   .c-button {
-    // display: block;
     background-color: $back;
     width: 260px;
     height: 55px;
@@ -59,7 +58,7 @@ $wback: #ffffff;
     text-decoration: none;
   }
 
-  .c-button a:hover{
+  .c-button a:hover {
     opacity: 0.5;
   }
 

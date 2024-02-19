@@ -387,6 +387,64 @@ progress {
   }
 }
 
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  border: 0;
+}
+
+.top-kv .top-kv-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (width >= 768px) {
+  .top-kv .top-kv-img {
+    margin-left: 26%;
+  }
+}
+.top-kv .top-message {
+  width: 167px;
+  height: 156px;
+  display: inline-block;
+  margin: 16px 0 16px 5%;
+}
+.top-kv .top-message p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 2.16;
+  letter-spacing: 0.2rem;
+}
+.top-kv .top-button {
+  background-color: #baa8a2;
+  width: 260px;
+  height: 55px;
+  margin-left: 5%;
+  text-align: center;
+}
+.top-kv .top-button a {
+  text-decoration: none;
+}
+.top-kv .top-button-view {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  padding-top: 19.5px;
+  color: #ffffff;
+}
+
+@media (width >= 768px) {
+  .top-kv {
+    margin-left: 10%;
+  }
+}
 .footer {
   width: 100%;
   background-color: #baa8a2;
@@ -514,7 +572,6 @@ progress {
   text-align: center;
   font-family: "Noto Serif JP", serif;
   color: #eeeeee;
-  margin: 0 auto;
 }
 
 /* ------------------------------ */
