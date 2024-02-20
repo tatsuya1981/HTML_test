@@ -406,8 +406,10 @@ progress {
   margin: 0 auto;
 }
 @media (width >= 768px) {
-  .top-kv .top-kv-img {
-    margin-left: 26%;
+  .top-kv .top-message-container {
+    position: relative;
+    left: 40px;
+    top: 156px;
   }
 }
 .top-kv .top-message {
@@ -416,11 +418,24 @@ progress {
   display: inline-block;
   margin: 16px 0 16px 5%;
 }
+@media (width >= 768px) {
+  .top-kv .top-message {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+}
 .top-kv .top-message p {
   font-weight: 500;
   font-size: 24px;
   line-height: 2.16;
   letter-spacing: 0.2rem;
+}
+@media (width >= 768px) {
+  .top-kv .top-message p {
+    font-size: 40px;
+    line-height: 2.4;
+  }
 }
 .top-kv .top-button {
   background-color: #baa8a2;
@@ -428,6 +443,13 @@ progress {
   height: 55px;
   margin-left: 5%;
   text-align: center;
+}
+@media (width >= 768px) {
+  .top-kv .top-button {
+    width: 360px;
+    margin-top: 96px;
+    margin-left: 0;
+  }
 }
 .top-kv .top-button a {
   text-decoration: none;
@@ -443,6 +465,9 @@ progress {
 @media (width >= 768px) {
   .top-kv {
     margin-left: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
   }
 }
 .footer {
