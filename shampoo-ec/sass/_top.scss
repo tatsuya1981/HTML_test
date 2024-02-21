@@ -143,3 +143,8 @@ $wback: #ffffff;
     margin: 0 10%;
   }
 }
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
