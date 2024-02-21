@@ -22,17 +22,10 @@ $wback: #ffffff;
   }
 
   @include min(md) {
-    .top-kv-img {
-
-    }
-  }
-
-  @include min(md) {
     .top-message-container {
       position: relative;
       left: 40px;
       top: 156px;
-
     }
   }
 
@@ -74,7 +67,7 @@ $wback: #ffffff;
   }
 
   @include min(md) {
-    .top-button{
+    .top-button {
       width: 360px;
       margin-top: 96px;
       margin-left: 0;
@@ -100,5 +93,53 @@ $wback: #ffffff;
     display: flex;
     flex-direction: row-reverse;
     position: relative;
+  }
+}
+
+.top-article {
+  width: 90%;
+  height: auto;
+  margin: 0 5%;
+
+  .features {
+    margin: 96px auto 48px;
+    text-align: center;
+  }
+
+  .feature {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.4rem;
+    text-shadow: 1px 4px 2px #dcdcdc;
+  }
+
+  @include min(md) {
+    .feature {
+      font-size: 32px;
+      letter-spacing: 0.8rem;
+      text-shadow: 0px 0px 0px;
+    }
+  }
+  .feature-coco {
+    font-family: "Noto Serif JP";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.08rem;
+    padding-top: 16px;
+  }
+
+  @include min(md) {
+    .feature-coco {
+      font-size: 18px;
+    }
+  }
+}
+
+@include min(md) {
+  .top-article {
+    width: 80%;
+    margin: 0 10%;
   }
 }
