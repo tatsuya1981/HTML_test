@@ -1,6 +1,7 @@
 @use "mediaQuery" as *;
 $back: #baa8a2;
 $wback: #ffffff;
+$stitle: #BAA8A2;
 
 .visuallyhidden {
   position: absolute;
@@ -100,9 +101,13 @@ $wback: #ffffff;
   width: 90%;
   height: auto;
   margin: 0 5%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 48px;
+  padding-bottom: 96px;
 
   .features {
-    margin: 96px auto 48px;
+    margin: 96px auto 0;
     text-align: center;
   }
 
@@ -135,6 +140,37 @@ $wback: #ffffff;
       font-size: 18px;
     }
   }
+
+  .top-coconut-img-pic img {
+    width: 100%;
+  }
+
+  .top-oil-img img {
+    width: 100%;
+  }
+
+  .top-sub-title {
+    font-size: 14px;
+    line-height: 1.75;
+    letter-spacing: 0.12em;
+    color: $stitle;
+    margin: 16px 0 4px;
+  }
+
+  .top-oil-name {
+    font-size: 18px;
+    line-height: 1.77;
+    letter-spacing: 0.08em;
+    color: #333333;
+    margin-bottom: 12px;
+  }
+
+  .top-oil-text {
+    font-size: 14px;
+    line-height: 1.79;
+    letter-spacing: 0.08em;
+    color: #5d5d5d;
+  }
 }
 
 @include min(md) {
@@ -142,9 +178,4 @@ $wback: #ffffff;
     width: 80%;
     margin: 0 10%;
   }
-}
-
-.features-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
 }
