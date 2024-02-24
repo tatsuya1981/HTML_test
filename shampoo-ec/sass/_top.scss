@@ -1,7 +1,7 @@
 @use "mediaQuery" as *;
 $back: #baa8a2;
 $wback: #ffffff;
-$stitle: #BAA8A2;
+$stitle: #baa8a2;
 
 .visuallyhidden {
   position: absolute;
@@ -80,10 +80,13 @@ $stitle: #BAA8A2;
   }
 
   .top-button-view {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 19.5px;
     font-size: 16px;
     line-height: 1;
     letter-spacing: 0.1rem;
-    padding-top: 19.5px;
     color: $wback;
   }
 }
@@ -101,9 +104,6 @@ $stitle: #BAA8A2;
   width: 90%;
   height: auto;
   margin: 0 5%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 48px;
   padding-bottom: 96px;
 
   .features {
@@ -132,17 +132,54 @@ $stitle: #BAA8A2;
     font-weight: 400;
     line-height: 1;
     letter-spacing: 0.08rem;
-    padding-top: 16px;
+    padding: 16px 0 48px 0;
   }
 
   @include min(md) {
     .feature-coco {
       font-size: 18px;
+      padding: 20px 0 80px 0;
+    }
+  }
+
+  .oil-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: center;
+  }
+
+  @include min(md) {
+    .oil-container {
+      gap: 80px 60px;
+    }
+  }
+
+  .top-oil-img {
+    margin: 0 auto;
+  }
+
+  @include min(md) {
+    .top-oil-img {
+      width: calc((100% / 2) - (60px * 1 / 2));
+    }
+  }
+
+  @include min(md) {
+    .top-oil-img:not(:nth-child(1), :nth-child(2)) {
+      width: calc((100% / 3) - (60px * 2 / 3));
     }
   }
 
   .top-coconut-img-pic img {
     width: 100%;
+    height: auto;
+  }
+
+  @include min(md) {
+    .top-coconut-img-pic img {
+      max-width: 540px;
+    }
   }
 
   .top-oil-img img {
@@ -157,6 +194,12 @@ $stitle: #BAA8A2;
     margin: 16px 0 4px;
   }
 
+  @include min(md) {
+    .top-sub-title {
+      font-size: 16px;
+    }
+  }
+
   .top-oil-name {
     font-size: 18px;
     line-height: 1.77;
@@ -165,11 +208,25 @@ $stitle: #BAA8A2;
     margin-bottom: 12px;
   }
 
+  @include min(md) {
+    .top-oil-name {
+      font-size: clamp(17px, 1.46vw, 20px);
+      line-height: 1.75;
+    }
+  }
+
   .top-oil-text {
     font-size: 14px;
     line-height: 1.79;
     letter-spacing: 0.08em;
     color: #5d5d5d;
+  }
+
+  @include min(md) {
+    .top-oil-text {
+      font-size: 16px;
+      line-height: 1.75;
+    }
   }
 }
 
@@ -177,5 +234,57 @@ $stitle: #BAA8A2;
   .top-article {
     width: 80%;
     margin: 0 10%;
+  }
+}
+
+.lineup-allimg-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.lineup-article {
+  width: 90%;
+  height: auto;
+  margin: 0 5%;
+
+  .lineup-title {
+    margin: 96px auto 48px;
+    text-align: center;
+  }
+
+  @include min(md) {
+    .lineup-title {
+      margin: 160px auto 80px;
+    }
+  }
+
+  .lineup-title1 {
+    color: "#333333";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.4em;
+  }
+
+  @include min(md) {
+    .lineup-title1 {
+      font-size: 32px;
+    }
+  }
+
+  .lineup-title2 {
+    font-family: "Noto Serif JP";
+    color: "#333333";
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    padding-top: 16px;
+  }
+
+  @include min(md) {
+    .lineup-title2 {
+      font-size: 18px;
+      padding-top: 20px;
+    }
   }
 }
