@@ -454,6 +454,9 @@ progress {
 .top-kv .top-button a {
   text-decoration: none;
 }
+.top-kv .top-button :hover {
+  opacity: 0.5;
+}
 .top-kv .top-button-view {
   display: inline-block;
   text-align: center;
@@ -635,6 +638,63 @@ progress {
     font-size: 18px;
     padding-top: 20px;
   }
+}
+.lineup-article .lineup-container {
+  display: grid;
+  grid-template-columns: repeat(1 1fr);
+  gap: 48px;
+}
+.lineup-article .lineup-list {
+  text-align: center;
+}
+.lineup-article .lineup-allimg-pic img {
+  max-width: 420px;
+}
+.lineup-article .lineup-list-title {
+  font-family: "Noto Serif JP";
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.08em;
+  padding-top: 16px 0;
+}
+.lineup-article .lineup-list-text {
+  color: #5d5d5d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.78;
+  letter-spacing: 0.08em;
+}
+.lineup-article .top-button {
+  background-color: #baa8a2;
+  width: 260px;
+  height: 55px;
+  margin: 16px auto 0;
+  text-align: center;
+}
+@media (width >= 768px) {
+  .lineup-article .top-button {
+    width: 360px;
+    margin-top: 96px;
+    margin-left: 0;
+  }
+}
+.lineup-article .top-button :hover {
+  opacity: 0.5;
+}
+.lineup-article .top-button a {
+  text-decoration: none;
+}
+.lineup-article .top-button-view {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-top: 19.5px;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
 }
 
 .footer {

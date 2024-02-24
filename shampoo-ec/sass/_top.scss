@@ -79,6 +79,10 @@ $stitle: #baa8a2;
     text-decoration: none;
   }
 
+  .top-button :hover {
+    opacity: 0.5;
+  }
+
   .top-button-view {
     display: inline-block;
     text-align: center;
@@ -89,6 +93,7 @@ $stitle: #baa8a2;
     letter-spacing: 0.1rem;
     color: $wback;
   }
+
 }
 
 @include min(md) {
@@ -286,5 +291,72 @@ $stitle: #baa8a2;
       font-size: 18px;
       padding-top: 20px;
     }
+  }
+
+  .lineup-container{
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    gap: 48px;
+  }
+
+  .lineup-list {
+    text-align: center;
+  }
+
+  .lineup-allimg-pic img{
+    max-width: 420px;
+  }
+
+  .lineup-list-title {
+    font-family: "Noto Serif JP";
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.08em;
+    padding-top: 16px 0;
+  }
+
+  .lineup-list-text {
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.78;
+    letter-spacing: 0.08em;
+  }
+
+  .top-button {
+    background-color: $back;
+    width: 260px;
+    height: 55px;
+    margin: 16px auto 0;
+    text-align: center;
+  }
+
+  @include min(md) {
+    .top-button {
+      width: 360px;
+      margin-top: 96px;
+      margin-left: 0;
+    }
+  }
+
+  .top-button :hover {
+    opacity: 0.5;
+  }
+  
+  .top-button a {
+    text-decoration: none;
+  }
+
+  .top-button-view {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 19.5px;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    color: $wback;
   }
 }
