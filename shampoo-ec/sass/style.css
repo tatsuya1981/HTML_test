@@ -820,6 +820,263 @@ progress {
     margin: 0 10%;
   }
 }
+/* ------------------------------ */
+/* トップ部分 */
+/* ------------------------------ */
+.pro-img-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.pro-shampoo {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  width: 90%;
+  height: auto;
+  margin: 0 5%;
+  padding: 96px 0;
+}
+.pro-shampoo .pro-shampoo-container {
+  width: 100%;
+  height: auto;
+}
+.pro-shampoo .pro-shampoo-img-pic img {
+  width: 100%;
+  height: 100%;
+}
+@media (width >= 768px) {
+  .pro-shampoo .pro-shampoo-img-pic img {
+    width: 29.13vw;
+    height: 100%;
+  }
+}
+.pro-shampoo .pro-shampoo-title {
+  font-family: "Noto Serif JP";
+  color: #333333;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.72;
+  letter-spacing: 0.08em;
+  padding-bottom: 16px;
+}
+@media (width >= 768px) {
+  .pro-shampoo .pro-shampoo-title {
+    font-size: 26px;
+    line-height: 1.73;
+    padding-bottom: 24px;
+  }
+}
+.pro-shampoo .pro-shampoo-text {
+  color: #5d5d5d;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.78;
+  letter-spacing: 0.08em;
+}
+@media (width >= 768px) {
+  .pro-shampoo .pro-shampoo-text {
+    font-size: clamp(10px, 1.17vw, 16px);
+    line-height: 1.75;
+    max-width: 386px;
+  }
+}
+.pro-shampoo .pro-shampoo-button {
+  background-color: #baa8a2;
+  width: 72.22vw;
+  max-width: 260px;
+  height: 55px;
+  margin: 16px auto 0;
+  text-align: center;
+}
+@media (width >= 768px) {
+  .pro-shampoo .pro-shampoo-button {
+    background-color: #baa8a2;
+    width: 72.22vw;
+    max-width: 260px;
+    height: 55px;
+    margin: 16px 0 0;
+  }
+}
+.pro-shampoo .pro-shampoo-button:hover {
+  opacity: 0.5;
+}
+.pro-shampoo .pro-shampoo-button a {
+  text-decoration: none;
+}
+.pro-shampoo .pro-shampoo-button-view {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-top: 19.5px;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.08rem;
+  color: #ffffff;
+}
+
+@media (width >= 768px) {
+  .pro-shampoo {
+    width: 65%;
+    flex-flow: row;
+    margin: 0 17.5%;
+    gap: 80px;
+  }
+}
+/* ------------------------------ */
+/* 関連商品部分 */
+/* ------------------------------ */
+.related {
+  width: 100%;
+  height: 100%;
+  padding: 96px 0;
+}
+.related .related-titles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 164px;
+  height: 94px;
+  text-align: center;
+}
+@media (width >= 768px) {
+  .related .related-titles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 510px;
+    height: 70px;
+  }
+}
+.related .related-title1 {
+  color: #333333;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.4em;
+}
+@media (width >= 768px) {
+  .related .related-title1 {
+    width: 100%;
+  }
+}
+.related .related-title2 {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+.related .related-container {
+  width: 90%;
+  height: auto;
+  margin: 48px 5% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+@media (width >= 768px) {
+  .related .related-container {
+    width: 80%;
+    height: auto;
+    margin: 80px 10% 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+.related .related-list {
+  text-align: center;
+}
+@media (width >= 768px) {
+  .related .related-list {
+    width: calc(33.3333333333% - 53.3333333333px);
+  }
+}
+.related .related-list img {
+  width: 90vw;
+}
+@media (width >= 768px) {
+  .related .related-list img {
+    width: 100%;
+  }
+}
+.related .related-name {
+  font-family: "Noto Serif JP";
+  color: #333333;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: 0.08em;
+  padding-top: 16px;
+}
+@media (width >= 768px) {
+  .related .related-name {
+    font-size: 20px;
+  }
+}
+.related .related-text {
+  font-family: "Noto Serif JP";
+  color: #5d5d5d;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.78;
+  letter-spacing: 0.08em;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (width >= 768px) {
+  .related .related-text {
+    font-size: clamp(14px, 1.17vw, 16px);
+    line-height: 1.75;
+    width: 100%;
+  }
+}
+.related .related-button {
+  background-color: #baa8a2;
+  width: 80%;
+  max-width: 260px;
+  height: 55px;
+  margin: 16px auto 0;
+  text-align: center;
+}
+@media (width >= 768px) {
+  .related .related-button {
+    width: 90%;
+  }
+}
+.related .related-button :hover {
+  opacity: 0.5;
+}
+.related .related-button a {
+  text-decoration: none;
+}
+.related .related-button-view {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-top: 19.5px;
+  font-size: clamp(12px, 4.44vw, 16px);
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+}
+@media (width >= 768px) {
+  .related .related-button-view {
+    padding-top: 19.5px;
+    font-size: clamp(14px, 1.32vw, 18px);
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+  }
+}
+
+@media (width >= 768px) {
+  .related {
+    padding: 160px 0;
+  }
+}
 .footer {
   width: 100%;
   background-color: #baa8a2;
