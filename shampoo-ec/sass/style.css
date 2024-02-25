@@ -665,7 +665,7 @@ progress {
 }
 .lineup-article .lineup-allimg-pic img {
   max-width: 420px;
-  width: 70%;
+  width: 100%;
 }
 .lineup-article .lineup-list-title {
   font-family: "Noto Serif JP";
@@ -704,6 +704,7 @@ progress {
 @media (width >= 768px) {
   .lineup-article .top-button {
     width: 26.35vw;
+    max-width: 324px;
     margin: 16px auto 0;
   }
 }
@@ -729,6 +730,73 @@ progress {
     padding-bottom: 160px;
   }
 }
+/* ------------------------------ */
+/* INSTAGRAM部分 */
+/* ------------------------------ */
+.insta-img img {
+  width: 100%;
+  height: auto;
+}
+
+.insta-article {
+  margin: 0 5%;
+  padding: 96px 0;
+}
+.insta-article .insta-title {
+  text-align: center;
+}
+.insta-article .insta-title1 {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.4em;
+  margin-bottom: 16px;
+}
+.insta-article .insta-title2 {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  margin-bottom: 48px;
+}
+.insta-article .insta-img-posts {
+  display: flex;
+  gap: 9px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.insta-article .insta-img-posts img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 48px;
+}
+.insta-article .insta-button {
+  background-color: #baa8a2;
+  width: 260px;
+  height: 55px;
+  margin: 16px auto 0;
+  text-align: center;
+}
+.insta-article .insta-button :hover {
+  opacity: 0.5;
+}
+.insta-article .insta-button a {
+  text-decoration: none;
+}
+.insta-article .insta-button-view {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-top: 19.5px;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+}
+
 .footer {
   width: 100%;
   background-color: #baa8a2;
