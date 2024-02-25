@@ -14,6 +14,11 @@ $stitle: #baa8a2;
   clip-path: inset(0px 0px 99.9% 99.9%);
   border: 0;
 }
+
+/* ------------------------------ */
+/* トップ部分 */
+/* ------------------------------ */
+
 .top-kv {
   .top-kv-img img {
     width: 100%;
@@ -104,6 +109,10 @@ $stitle: #baa8a2;
     position: relative;
   }
 }
+
+/* ------------------------------ */
+/* FEATURE部分 */
+/* ------------------------------ */
 
 .top-article {
   width: 90%;
@@ -242,6 +251,10 @@ $stitle: #baa8a2;
   }
 }
 
+/* ------------------------------ */
+/* lineup部分 */
+/* ------------------------------ */
+
 .lineup-allimg-pic img {
   width: 100%;
   height: auto;
@@ -251,6 +264,7 @@ $stitle: #baa8a2;
   width: 90%;
   height: auto;
   margin: 0 5%;
+  padding-bottom: 96px;
 
   .lineup-title {
     margin: 96px auto 48px;
@@ -293,18 +307,25 @@ $stitle: #baa8a2;
     }
   }
 
-  .lineup-container{
+  .lineup-container {
     display: grid;
-    grid-template-columns: repeat(1 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 48px;
   }
 
+  @include min(md) {
+    .lineup-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+  }
   .lineup-list {
     text-align: center;
   }
 
   .lineup-allimg-pic img{
     max-width: 420px;
+    width: 70%;
   }
 
   .lineup-list-title {
@@ -314,7 +335,13 @@ $stitle: #baa8a2;
     font-weight: 500;
     line-height: 1.75;
     letter-spacing: 0.08em;
-    padding-top: 16px 0;
+    padding: 16px 0 16px 0;
+  }
+
+  @include min(md) {
+    .lineup-list-title {
+      font-size: 20px;
+    }
   }
 
   .lineup-list-text {
@@ -323,6 +350,13 @@ $stitle: #baa8a2;
     font-weight: 500;
     line-height: 1.78;
     letter-spacing: 0.08em;
+  }
+
+  @include min(md) {
+    .lineup-list-text {
+      font-size: 16px;
+      line-height: 1.75;
+    }
   }
 
   .top-button {
@@ -335,9 +369,8 @@ $stitle: #baa8a2;
 
   @include min(md) {
     .top-button {
-      width: 360px;
-      margin-top: 96px;
-      margin-left: 0;
+      width: 26.35vw;
+      margin: 16px auto 0;
     }
   }
 
@@ -358,5 +391,11 @@ $stitle: #baa8a2;
     line-height: 1;
     letter-spacing: 0.1rem;
     color: $wback;
+  }
+}
+
+@include min(md) {
+  .lineup-article {
+    padding-bottom: 160px;
   }
 }

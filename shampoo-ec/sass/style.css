@@ -399,6 +399,9 @@ progress {
   border: 0;
 }
 
+/* ------------------------------ */
+/* トップ部分 */
+/* ------------------------------ */
 .top-kv .top-kv-img img {
   width: 100%;
   height: auto;
@@ -476,6 +479,9 @@ progress {
     position: relative;
   }
 }
+/* ------------------------------ */
+/* FEATURE部分 */
+/* ------------------------------ */
 .top-article {
   width: 90%;
   height: auto;
@@ -594,6 +600,9 @@ progress {
     margin: 0 10%;
   }
 }
+/* ------------------------------ */
+/* lineup部分 */
+/* ------------------------------ */
 .lineup-allimg-pic img {
   width: 100%;
   height: auto;
@@ -603,6 +612,7 @@ progress {
   width: 90%;
   height: auto;
   margin: 0 5%;
+  padding-bottom: 96px;
 }
 .lineup-article .lineup-title {
   margin: 96px auto 48px;
@@ -641,14 +651,21 @@ progress {
 }
 .lineup-article .lineup-container {
   display: grid;
-  grid-template-columns: repeat(1 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 48px;
+}
+@media (width >= 768px) {
+  .lineup-article .lineup-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 .lineup-article .lineup-list {
   text-align: center;
 }
 .lineup-article .lineup-allimg-pic img {
   max-width: 420px;
+  width: 70%;
 }
 .lineup-article .lineup-list-title {
   font-family: "Noto Serif JP";
@@ -657,7 +674,12 @@ progress {
   font-weight: 500;
   line-height: 1.75;
   letter-spacing: 0.08em;
-  padding-top: 16px 0;
+  padding: 16px 0 16px 0;
+}
+@media (width >= 768px) {
+  .lineup-article .lineup-list-title {
+    font-size: 20px;
+  }
 }
 .lineup-article .lineup-list-text {
   color: #5d5d5d;
@@ -665,6 +687,12 @@ progress {
   font-weight: 500;
   line-height: 1.78;
   letter-spacing: 0.08em;
+}
+@media (width >= 768px) {
+  .lineup-article .lineup-list-text {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
 .lineup-article .top-button {
   background-color: #baa8a2;
@@ -675,9 +703,8 @@ progress {
 }
 @media (width >= 768px) {
   .lineup-article .top-button {
-    width: 360px;
-    margin-top: 96px;
-    margin-left: 0;
+    width: 26.35vw;
+    margin: 16px auto 0;
   }
 }
 .lineup-article .top-button :hover {
@@ -697,6 +724,11 @@ progress {
   color: #ffffff;
 }
 
+@media (width >= 768px) {
+  .lineup-article {
+    padding-bottom: 160px;
+  }
+}
 .footer {
   width: 100%;
   background-color: #baa8a2;
