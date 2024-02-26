@@ -128,6 +128,7 @@ $stitle: #baa8a2;
   width: 100%;
   height: 100%;
   padding: 96px 0;
+  background-color: rgba($color: #baa8a2, $alpha: 0.15);
 
   .related-titles {
     display: flex;
@@ -189,23 +190,43 @@ $stitle: #baa8a2;
       gap: 80px;
     }
   }
-  .related-list {
+  .related-list-1,
+  .related-list-2,
+  .related-list-3 {
     text-align: center;
   }
 
   @include min(md) {
-    .related-list {
+    .related-list-1,
+    .related-list-2,
+    .related-list-3 {
       width: calc((100% / 3) - (80px * 2 / 3));
     }
   }
 
-  .related-list img {
+  .related-list-1 img,
+  .related-list-2 img,
+  .related-list-3 img {
     width: 90vw;
   }
 
   @include min(md) {
-    .related-list img {
+    .related-list-1 img,
+    .related-list-2 img,
+    .related-list-3 img {
       width: 100%;
+    }
+  }
+
+  @include min(md) {
+    .related-list-1 {
+      order: 1;
+    }
+  }
+
+  @include min(md) {
+    .related-list-3 {
+      order: 2;
     }
   }
 
@@ -242,7 +263,6 @@ $stitle: #baa8a2;
       font-size: clamp(14px, 1.17vw, 16px);
       line-height: 1.75;
       width: 100%;
-      
     }
   }
 
