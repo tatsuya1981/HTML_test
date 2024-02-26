@@ -281,7 +281,7 @@ $stitle: #baa8a2;
     }
   }
 
-  .related-button :hover {
+  .related-button:hover {
     opacity: 0.5;
   }
 
@@ -302,11 +302,7 @@ $stitle: #baa8a2;
 
   @include min(md) {
     .related-button-view {
-      padding-top: 19.5px;
       font-size: clamp(14px, 1.32vw, 18px);
-      line-height: 1;
-      letter-spacing: 0.1rem;
-      color: $wback;
     }
   }
 }

@@ -335,7 +335,7 @@ progress {
 .c-main .c-title-level2 a {
   text-decoration: none;
 }
-.c-main .c-title-level2 a:hover {
+.c-main .c-button:hover {
   opacity: 0.5;
 }
 .c-main .c-en {
@@ -457,7 +457,7 @@ progress {
 .top-kv .top-button a {
   text-decoration: none;
 }
-.top-kv .top-button :hover {
+.top-kv .top-button:hover {
   opacity: 0.5;
 }
 .top-kv .top-button-view {
@@ -797,7 +797,7 @@ progress {
   margin: 16px auto 0;
   text-align: center;
 }
-.insta-article .insta-button :hover {
+.insta-article .insta-button:hover {
   opacity: 0.5;
 }
 .insta-article .insta-button a {
@@ -1065,7 +1065,7 @@ progress {
     width: 90%;
   }
 }
-.related .related-button :hover {
+.related .related-button:hover {
   opacity: 0.5;
 }
 .related .related-button a {
@@ -1083,11 +1083,7 @@ progress {
 }
 @media (width >= 768px) {
   .related .related-button-view {
-    padding-top: 19.5px;
     font-size: clamp(14px, 1.32vw, 18px);
-    line-height: 1;
-    letter-spacing: 0.1rem;
-    color: #ffffff;
   }
 }
 
