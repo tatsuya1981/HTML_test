@@ -2,6 +2,18 @@
 $back: #baa8a2;
 $wback: #ffffff;
 
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  border: 0;
+}
+
 .c-main {
   width: 100%;
   text-align: center;
@@ -54,7 +66,7 @@ $wback: #ffffff;
     margin: 47px auto 47px;
   }
 
-  .c-button a {
+  .c-button-link {
     text-decoration: none;
   }
 

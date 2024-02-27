@@ -322,9 +322,14 @@ $stitle: #baa8a2;
     text-align: center;
   }
 
-  .lineup-allimg-pic img {
-    max-width: 420px;
-    width: 100%;
+  .lineup-list-pic img {
+    width: 30.74vw;
+    height: auto;
+    transition: 0.3s;
+  }
+
+  .lineup-list-pic:hover img {
+    transform: scale(1.05);
   }
 
   .lineup-list-title {
@@ -370,7 +375,6 @@ $stitle: #baa8a2;
     .top-button {
       width: 26.35vw;
       max-width: 324px;
-      margin: 16px auto 0;
     }
   }
 
@@ -461,6 +465,14 @@ $stitle: #baa8a2;
     .insta-img-posts {
       gap: 24px;
     }
+  }
+
+  .insta-img-link img{
+    transition: 0.3s;
+  }
+
+  .insta-img-link:hover img {
+    transform: scale(0.95);
   }
 
   .insta-img-posts img {

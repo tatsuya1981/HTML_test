@@ -324,6 +324,18 @@ progress {
     width: 25.3px;
   }
 }
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  border: 0;
+}
+
 .c-main {
   width: 100%;
   text-align: center;
@@ -368,7 +380,7 @@ progress {
   height: 55px;
   margin: 47px auto 47px;
 }
-.c-main .c-button a {
+.c-main .c-button-link {
   text-decoration: none;
 }
 .c-main .c-button a:hover {
@@ -663,9 +675,13 @@ progress {
 .lineup-article .lineup-list {
   text-align: center;
 }
-.lineup-article .lineup-allimg-pic img {
-  max-width: 420px;
-  width: 100%;
+.lineup-article .lineup-list-pic img {
+  width: 30.74vw;
+  height: auto;
+  transition: 0.3s;
+}
+.lineup-article .lineup-list-pic:hover img {
+  transform: scale(1.05);
 }
 .lineup-article .lineup-list-title {
   font-family: "Noto Serif JP";
@@ -705,7 +721,6 @@ progress {
   .lineup-article .top-button {
     width: 26.35vw;
     max-width: 324px;
-    margin: 16px auto 0;
   }
 }
 .lineup-article .top-button:hover {
@@ -784,6 +799,12 @@ progress {
   .insta-article .insta-img-posts {
     gap: 24px;
   }
+}
+.insta-article .insta-img-link img {
+  transition: 0.3s;
+}
+.insta-article .insta-img-link:hover img {
+  transform: scale(0.95);
 }
 .insta-article .insta-img-posts img {
   width: 100%;
