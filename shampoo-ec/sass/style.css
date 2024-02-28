@@ -380,6 +380,12 @@ progress {
   height: 55px;
   margin: 47px auto 47px;
 }
+@media (width >= 768px) {
+  .c-main .c-button {
+    width: 324px;
+    margin: 86px auto 86px;
+  }
+}
 .c-main .c-button-link {
   text-decoration: none;
 }
@@ -676,7 +682,7 @@ progress {
   text-align: center;
 }
 .lineup-article .lineup-list-pic img {
-  width: 30.74vw;
+  width: 100%;
   height: auto;
   transition: 0.3s;
 }
@@ -946,6 +952,7 @@ progress {
     flex-flow: row;
     margin: 0 17.5%;
     gap: 80px;
+    padding: 160px 0;
   }
 }
 /* ------------------------------ */
@@ -1195,6 +1202,11 @@ progress {
   max-width: 260px;
   height: 55px;
   margin: 0 auto;
+}
+@media (width >= 768px) {
+  .error-container .error-button {
+    max-width: 324px;
+  }
 }
 .error-container .error-button:hover {
   opacity: 0.5;
