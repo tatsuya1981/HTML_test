@@ -434,7 +434,8 @@ progress {
   }
 }
 .top-kv .top-message {
-  width: 167px;
+  color: #333333;
+  width: 175px;
   height: 156px;
   display: inline-block;
   margin: 16px 0 16px 5%;
@@ -450,7 +451,7 @@ progress {
   font-weight: 500;
   font-size: 24px;
   line-height: 2.16;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.2em;
 }
 @media (width >= 768px) {
   .top-kv .top-message p {
@@ -485,7 +486,7 @@ progress {
   padding-top: 19.5px;
   font-size: 16px;
   line-height: 1;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
@@ -514,7 +515,8 @@ progress {
   font-size: 20px;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.4em;
+  padding-left: 0.4em;
   text-shadow: 1px 4px 2px #dcdcdc;
 }
 @media (width >= 768px) {
@@ -647,6 +649,7 @@ progress {
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.4em;
+  padding-left: 0.4em;
 }
 @media (width >= 768px) {
   .lineup-article .lineup-title1 {
@@ -772,6 +775,7 @@ progress {
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.4em;
+  padding-left: 0.4em;
   margin-bottom: 16px;
 }
 @media (width >= 768px) {
